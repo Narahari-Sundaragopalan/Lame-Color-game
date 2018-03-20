@@ -10,4 +10,4 @@
 
 ### ToDo List Preview
 
-![Tooltip for visually disabled](./images/ToDoList-Preview.png)
+![Tooltip for visually disabled](./images/TodoList-Preview.png)
