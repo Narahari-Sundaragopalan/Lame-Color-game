@@ -1,0 +1,153 @@
+
+<html>
+    <title>Collapsible Sidebar</title>
+    <link href="sidebar.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha256-pS96pU17yq+gVu4KBQJi38VpSuKN7otMrDQprzf/DWY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha256-5+02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js" integrity="sha256-FA14tBI8v+/1BtcH9XtJpcNbComBEpdawUZA6BPXRVw=" crossorigin="anonymous"></script>
+    <header>
+        
+    </header>
+    <div class="wrapper">
+        <nav id="sidebar" class="active">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="fas fa-align-justify"></i>
+            </button>
+            <div class="sidebar-header">
+                <h3>Collapsible Sidebar</h3>
+                <strong></strong>
+            </div>
+          
+            <ul class="list-unstyled components">
+                        <li>
+                            <a href="#" dusk="dashboard">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a dusk="se-menu" href="#homeSubMenu" data-toggle="collapse" class="rotate" aria-expanded="false">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                                <i class="fas fa-angle-left float-sm-right"></i>
+                            </a>
+                            <ul class="collapse list-unstyled treeViewMenu" id="homeSubMenu">
+                                <li>
+                                    <a dusk="se-search" href="#">
+                                        <i class="fas fa-search"></i>
+                                        <span>Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a dusk="se-new" href="#">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <span>New</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a dusk="se-reports_dashboard" href="#">
+                                        <i class="fas fa-address-card"></i>
+                                        <span>Contacts</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a dusk="se-advance_search" href="#">
+                                        <i class="fas fa-cogs"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li>
+                            <a dusk="dna-menu" href="#pageSubmenu" data-toggle="collapse" class="rotate" aria-expanded="false">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Reports</span>
+                                <i class="fas fa-angle-left float-sm-right"></i>
+                            </a>
+                            <ul class="collapse list-unstyled treeViewMenu" id="pageSubmenu">
+                                <li>
+                                    <a dusk="dna-search" href="#">
+                                        <i class="fas fa-search"></i>
+                                        <span>Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a dusk="dna-mtDNA" href="#">
+                                        <i class="fas fa-search-plus"></i>
+                                        <span>Advanced Search</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+          
+                    <li>
+                        <a dusk="report-menu" href="#reportSubmenu" data-toggle="collapse" class="rotate" aria-expanded="false">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Schedule</span>
+                            <i class="fas fa-angle-left float-sm-right"></i>
+                        </a>
+                        <ul class="collapse list-unstyled treeViewMenu" id="reportSubmenu">
+                            <li>
+                                <a dusk="export-file" href="#">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <span>List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a dusk="file-manager" href="#">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    <span>Track</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+          
+                        <li>
+                            <a dusk="administrator-menu" href="#adminSubMenu" data-toggle="collapse" class="rotate" aria-expanded="false">
+                                <i class="fas fa-users-cog"></i>
+                                <span>Administration</span>
+                                <i class="fas fa-angle-left float-sm-right"></i>
+                            </a>
+                            <ul class="collapse list-unstyled treeViewMenu" id="adminSubMenu">
+                                <li>
+                                    <a dusk="administrator-user_management" href="#">
+                                        <i class="fas fa-users"></i>
+                                        <span>User Management</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a dusk="administrator-project_management" href="#">
+                                        <i class="fas fa-sitemap"></i>
+                                        <span>Project Management</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a dusk="administrator-accession_management" href="#">
+                                        <i class="fas fa-universal-access"></i>
+                                        <span>Accession Management</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+            </ul>
+          </nav>
+    </div>
+</html>
+
+
+<script>
+  $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').toggleClass('active');
+          $('.navbar-brand').toggleClass('navToggle');
+      });
+      $('.rotate').click(function() {
+          $(this).children('.fa-angle-left').toggleClass('down');
+      })
+  });
+</script>
